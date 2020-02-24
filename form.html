@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form of Vuong Do</title>
+</head>
+<body>
+    <header>
+    <h1>Personal information survey form</h1>
+    </header>
+    <button type="button" onclick="alert('Hello I am Vuong. Pleasea fill form help me!')">To say hello with me</button>
+    <form action="/formhandler.html" target="_blank" method="get">
+    <fieldset>
+    <legend>Information</legend>
+    <div>
+        <!--<h1>Text input fields</h1>-->
+        <p>What is your full name?</p>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="name" value="Do"><br>
+        <label for="lname">Last name</label><br>
+        <input type="text" id="lname" name="name" value="Vuong"><br>
+    </div>
+    <div>
+        <!--<h1>Radio button input feilds</h1>-->
+        <p>Choose your gender?</p>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender">
+        <label for="other">Other</label><br>
+    </div>
+    <div>
+        <label for="birthday">What is your birthday</label>
+        <input type="date" id="birthday" name="birthday" value="1996-03-20">
+    </div>
+    <div>
+        <p>Where are you live in VietNam?</p>
+        <input list="lives" name="live">
+        <datalist id="lives">
+        <option value="Long An">
+        <option value="TP HCM">
+        <option value="Ha Noi">
+        </datalist>
+    </div>
+    <div>
+        <label for="car" >Chosse a car</label>
+        <select id="car" name="cars" size="2" multiple>
+        <option value="toyota_inova">Toyota Inova</option>
+        <option value="toyota_fortuner">Toyota Fotuner</option>
+        <option Value="misubishi_xpander">Misubishi Xpander</option>
+        <option value="suzuki_ertiga">Suzuki Ertiga</option>
+        </select>
+    </div>
+    <div>
+        <p>What time do you buy a car?</p>
+        <label for="from">Form</label>
+        <input type="date" id="from" name="from" min="2020-02-24"><br>
+        <label for="to">To</label>
+        <input type="date" id="to" name="to" max="2020-03-01">
+    </div>
+    <div>
+        <label for="favcolor">Chosse favorite color your car</label>
+        <input type="color" id="favcolor" name="favcolor" value="#00ff0f">
+    </div>
+    <div>
+        <p>What is your hobby</p>
+        <input type="checkbox" id="hobby1" name="hobby1"                  value="Read Book">
+        <label for="hobby1">Read Book</label><br>
+        <input type="checkbox" id="hobby2" name="hobby2"                  value="Play Sport">
+        <label for="hobby2">Play Sport</label><br>
+        <input type="checkbox" id="hobby3" name="hobby3" 
+               value="Go Travel">
+        <label for="hobby3">Go Travel</label><br>
+        <input type="checkbox" id="hobby4" mame="hobby4"                  value="Play Game">
+        <label for="hobby4">Play Game</label>
+    </div>
+    <div>
+        <p>Caculator price of car!</p>
+        <form action="/action_page.php"
+          oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="100">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+        </form>
+    </div>
+    <div>
+    <p>Introduction</p>
+    <textarea name="introduction" rows="10" cols="30">
+    Can you tell me about yourseft
+    </textarea>
+    </div>
+    <div>
+        <input type="submit" value="Submit" mult>
+        <input type="reset" Value="Reset">
+    </div>
+    </fieldset>
+    </form>
+    <form action="/formhandler.html">
+    <fieldset>
+    <legend>Sign Up</legend>
+    <label for="username">User name</label><br>
+    <input type="text" id="username" name="signup" value="vuongvgc"><br>
+    <label for="pwd">Password</label><br>
+    <input type="password" id="pwd" name="signup"><br>
+    <input type="submit" value="Sign up">
+    </fieldset>
+    </form>
+</body>    
+</html>

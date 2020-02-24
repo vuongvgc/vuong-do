@@ -29,3 +29,18 @@ h1
 {
 text-align: center;
 }
+img
+{
+padding: 5px;
+width: 50px;
+}
+.logo
+{
+margin: 0px;
+padding: 0px;
+overflow: hidden;
+}
+img,h1
+{
+float: left;
+}

@@ -16,14 +16,14 @@
         <!--<h1>Text input fields</h1>-->
         <p>What is your full name?</p>
         <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="name" value="Do"><br>
+        <input type="text" id="fname" name="name" value="Do" readonly><br>
         <label for="lname">Last name</label><br>
-        <input type="text" id="lname" name="name" value="Vuong"><br>
+        <input type="text" id="lname" name="name" value="Vuong" required="required" size="50"><br>
     </div>
     <div>
         <!--<h1>Radio button input feilds</h1>-->
         <p>Choose your gender?</p>
-        <input type="radio" id="male" name="gender">
+        <input type="radio" id="male" name="gender" checked>
         <label for="male">Male</label><br>
         <input type="radio" id="female" name="gender">
         <label for="female">Female</label><br>
@@ -31,8 +31,15 @@
         <label for="other">Other</label><br>
     </div>
     <div>
+        <label for="old">How old are you?</label>
+        <input type="number" id="old" mame="old" step="2" size="2">
+    </div>
+    <div>
         <label for="birthday">What is your birthday</label>
         <input type="date" id="birthday" name="birthday" value="1996-03-20">
+    </div>
+    <div>
+        <label for="bdaymonth">What month you go to school</label> <input type="month" id="bdaymonth" name="bdaymonth">
     </div>
     <div>
         <p>Where are you live in VietNam?</p>
@@ -44,6 +51,22 @@
         </datalist>
     </div>
     <div>
+        <label for="children">Do you have any children?</label>
+        <input type="number" id="children" name="children" min="0" max="5">
+    </div>
+    <div>
+        <label for="pnumber">Your Phone Number</label>
+        <input type="text" id="pnumber" name="pnumber" placeholder="0789-200396" pattern="[0-9]{4}-[0-9]{6}" title="Enter your phone?">
+    </div>
+    <div>
+        <label for="email">What is your email?</label><br>
+        <input type="email" id="email" name="email" Value="vuongvgc@gmail.com">
+    </div>
+    <div>
+        <label for="live">What time buy a car ?(date and time)</label>
+        <input type="datetime-local" id="live" name="live">
+    </div>
+    <div>
         <label for="car" >Chosse a car</label>
         <select id="car" name="cars" size="2" multiple>
         <option value="toyota_inova">Toyota Inova</option>
@@ -52,6 +75,7 @@
         <option value="suzuki_ertiga">Suzuki Ertiga</option>
         </select>
     </div>
+   
     <div>
         <p>What time do you buy a car?</p>
         <label for="from">Form</label>
@@ -65,7 +89,7 @@
     </div>
     <div>
         <p>What is your hobby</p>
-        <input type="checkbox" id="hobby1" name="hobby1"                  value="Read Book">
+        <input type="checkbox" id="hobby1" name="hobby1"                  value="Read Book" checked="checked">
         <label for="hobby1">Read Book</label><br>
         <input type="checkbox" id="hobby2" name="hobby2"                  value="Play Sport">
         <label for="hobby2">Play Sport</label><br>
@@ -91,24 +115,24 @@
     </div>
     <div>
     <p>Introduction</p>
-    <textarea name="introduction" rows="10" cols="30">
+    <textarea name="introduction" rows="10" cols="30" maxlength="200" disabled>
     Can you tell me about yourseft
     </textarea>
     </div>
     <div>
-        <input type="submit" value="Submit" mult>
-        <input type="reset" Value="Reset">
+        <input type="image" src="images/img_submit.gif" alt="Submit" width="48" height="48" value="Submit" mult>
+        <input type="reset" value="reset">
     </div>
     </fieldset>
     </form>
-    <form action="/formhandler.html">
+    <form action="/formhandler.html" autocomplete="on">
     <fieldset>
     <legend>Sign Up</legend>
     <label for="username">User name</label><br>
-    <input type="text" id="username" name="signup" value="vuongvgc"><br>
+    <input type="text" id="username" name="signup" placeholder="vuongvgc" autofocus><br>
     <label for="pwd">Password</label><br>
     <input type="password" id="pwd" name="signup"><br>
-    <input type="submit" value="Sign up">
+    <input type="submit" value="Sign up"  maxlength="4" size="4">
     </fieldset>
     </form>
 </body>    

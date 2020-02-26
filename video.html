@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Toyota Innova 2020</title>
+        <meta charset="utf-8">
+        <meta name="keyword" content="innova">
+        <meta name="viewport" content="width:device-width, initical-scale:1.0">
+        <meta name="author" content="Vuong Do">
+    </head>
+    <body>
+        <h1>TOYOTA INNOVA 2020</h1>
+        <div>
+            <p>Introduction about Toyota Innova 2020</p>
+            <video id="video1" width="600px"  >
+                <source src="images/mp4-innova.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            <button onclick="playPause()">Play/Pasue</button>
+            <button onclick="makeBig()">Zoom +</button>
+            <button onclick="makeDefault()">Default</button>
+            <button onclick="makeSmall()">Zoom -</button>
+        </div>
+        <script>
+            var myVideo = document.getElementById("video1");
+            function playPause(){
+                if (myVideo.paused)
+                myVideo.play();
+                else
+                myVideo.pause();
+            }
+            
+            function makeBig() {
+                myVideo.width = 800 ;
+            }
+            function makeSmall() {
+                myVideo.width = 500 ;
+            }
+            function makeDefault(){
+                myVideo.width = 600;
+            }
+        </script>
+    </body>
+</html>

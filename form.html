@@ -3,6 +3,10 @@
 <head>
 <meta charset="utf-8">
 <title>Form of Vuong Do</title>
+<link href="https://fonts.googleapis.com/css?family=Dosis|Roboto+Condensed&display=swap" rel="stylesheet">
+<link href="styles/cssform.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://kit.fontawesome.com/caba06fd75.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -13,7 +17,7 @@
     <form action="/formhandler.html" target="_blank" method="get">
     <fieldset>
         <legend>Information</legend>
-        <div>
+        <div class="nameform">
             <!--<h1>Text input fields</h1>-->
             <p>What is your full name?</p>
             <label  for="fname">First name:</label><br>
@@ -30,7 +34,7 @@
                     required="required" 
                     size="50"/><br>
         </div>
-        <div>
+        <div class="gender">
             <!--<h1>Radio button input feilds</h1>-->
             <p>Choose your gender?</p>
             <input  type="radio" 
@@ -47,7 +51,7 @@
                     name="gender"/>
             <label  for="other">Other</label><br>
         </div>
-        <div>
+        <div class="old">
             <label  for="old">How old are you?</label>
             <input  type="number" 
                     id="old" 
@@ -62,13 +66,13 @@
                     name="birthday" 
                     value="1996-03-20"/>
         </div>
-        <div>
+        <div class="birthday">
             <label  for="bdaymonth">What month you go to school</label> 
             <input  type="month" 
                     id="bdaymonth" 
                     name="bdaymonth"/>
         </div>
-        <div>
+        <div class="live">
             <p>Where are you live in VietNam?</p>
             <input  list="lives" name="live">
             <datalist id="lives">
@@ -108,7 +112,7 @@
                     name="live">
         </div>
         <div>
-            <label  for="car" >Chosse a car</label>
+            <label  for="car" >Chosse a car <i class="fas fa-car"></i></label>
             <select id="car" 
                     name="cars" 
                     size="2" 
@@ -147,7 +151,7 @@
                     name="favcolor" 
                     value="#00ff0f"/>
         </div>
-        <div>
+        <div  class="hobby">
             <p>What is your hobby</p>
             <input  type="checkbox" 
                     id="hobby1" 
@@ -238,5 +242,8 @@
         </div>
     </fieldset>
     </form>
+    <footer>
+            <p>The wed page creat by<a href="https://www.facebook.com/vuongvgc" target="_blank" >Vuong Do</a> </p>
+    </footer>
 </body>    
 </html>

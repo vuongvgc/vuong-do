@@ -1,0 +1,132 @@
+/*
+body
+{
+    background-color: paleturquoise;
+    background-image:url("/images/innova.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: scroll;
+}
+*/
+
+body
+{
+    background: palegreen
+                 url("/images/innova.png") 
+                 no-repeat 
+                 top right 
+                 fixed;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align:left;
+    /*font-size: 100%;*/
+    font-size: 1vw;
+}
+div
+{
+    margin: 20px;
+    font-size: 1.0em;
+}
+.nameform
+{
+    margin: inherit;
+    border-style: double;
+    border-width: medium;
+    outline: 1px green solid;
+    outline-offset: 5px;
+}
+.gender
+{
+    border-style: inset;
+    border-width: 2px 5px;
+}
+.old
+{
+    border-top-style: dashed;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+}
+.birthday
+{
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 20px;
+    height: 10%;
+    width: 500px;
+    outline-style: solid;
+    outline-width: thick;
+    outline-color: invert;
+}
+.live
+{
+    width:500px;
+    padding: 10px;
+    border: 1px yellow dashed;
+    margin: 20px;
+}
+header
+{
+    color: red;
+    text-shadow: 3px 1px pink;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 20px;
+}
+footer
+{
+    direction: rtl;
+    unicode-bidi: bidi-override; /* chua hieu*/
+    text-transform: lowercase;
+    font-style: italic;
+}
+.hobby
+{
+    
+    font-family: 'Roboto Condensed','Dosis',serif;
+    line-height: 10px;
+    text-indent: 50px;
+}
+a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/*
+a:link
+{
+    color:blue;
+}
+a:visited{
+    color: red;
+}
+a:hover
+{
+    background-color: green;
+    
+}
+a:active
+{
+    color:yellow;
+}
+*/
+button
+{
+    font-weight: bold;
+}
+.fas,fa-car
+{
+    color: red;
+}
+a:link, a:visited
+{
+    background-color: antiquewhite;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+a:hover , a:active
+{
+    background-color: green;
+}

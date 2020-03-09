@@ -1,0 +1,131 @@
+body
+{
+    width: 800px;
+    border: 2px pink double;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 10px 10px 20px 20px;
+    word-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 100%;
+    
+}
+.imgheader
+{
+    width: 600px;
+    height: auto;
+    max-width: 700px;
+    margin: 0px 100px;
+}
+.imgicon
+{
+    width: 50px;
+    height: auto;
+    max-width: 50px;
+}
+.tdcontent
+{
+    text-indent: 20px;
+}
+h1
+{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 2px brown;
+    letter-spacing: 4px;
+    font-size: 3.5em;
+}
+footer
+{
+    text-align: right;
+    
+}
+a
+{
+    text-decoration: none;
+}
+ol,li
+{  
+   line-height: 1.6;
+}
+ol li
+{
+    background-color: #ffe5e5;
+    padding: 5px;
+    margin-left: 35px;
+}
+ol
+{
+    background-color: #ff9999;
+    padding: 20px;
+}
+p
+{
+    font-size: 1.0em;
+}
+.fab, .fa-facebook-f
+{
+    color: blue;
+}
+.fas , .fa-calendar-alt
+{
+    color: orange;
+}
+a:link
+{
+    color:blue;
+}
+a:visited
+{
+    color: orange;
+}
+a:hover
+{
+    color: green;
+}
+a:active
+{
+    color:red;
+}
+table, td, th
+{
+    border: 2px green solid;
+    border-radius: 5px;
+    border-collapse: collapse;
+    padding: 10px;
+}
+table
+{
+    width: 100%;
+}
+th
+{
+    height: 50px;
+    text-transform: capitalize;
+    color: blue;
+    background-color: antiquewhite;
+}
+td
+{
+    text-align: justify;
+}
+tr:hover
+{
+    background-color: palegreen;
+}
+/*
+tr:nth-child(even)
+{
+    background-color: powderblue;
+}
+*/
+nav li
+{
+    display: inline;
+}
+nav
+{
+    margin: 5px auto;
+}
+

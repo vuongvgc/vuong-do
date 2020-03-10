@@ -1,6 +1,11 @@
-body
+*
 {
-    width: 800px;
+    box-sizing: border-box;
+}
+
+/*body
+{
+    width: 75%;
     border: 2px pink double;
     border-radius: 5px;
     margin: 10px auto;
@@ -11,18 +16,26 @@ body
     font-size: 100%;
     
 }
+*/
 .imgheader
 {
-    width: 600px;
+    width: 100%;
     height: auto;
-    max-width: 700px;
-    margin: 0px 100px;
+   
+    
 }
 .imgicon
 {
     width: 50px;
     height: auto;
     max-width: 50px;
+    float: left;
+    margin-right: 20px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 .tdcontent
 {
@@ -35,6 +48,7 @@ h1
     text-shadow: 3px 2px brown;
     letter-spacing: 4px;
     font-size: 3.5em;
+    position: relative;
 }
 footer
 {
@@ -78,6 +92,10 @@ a:link
 }
 a:visited
 {
+    color: white;
+}
+.infor a:visited
+{
     color: orange;
 }
 a:hover
@@ -98,6 +116,7 @@ table, td, th
 table
 {
     width: 100%;
+   
 }
 th
 {
@@ -105,6 +124,8 @@ th
     text-transform: capitalize;
     color: blue;
     background-color: antiquewhite;
+    position: sticky;
+    top: 0;
 }
 td
 {
@@ -126,6 +147,88 @@ nav li
 }
 nav
 {
-    margin: 5px auto;
+    position: absolute;
+    bottom: 60px;
+    left: 350px;
+    font-size: 18px;
+    
+}
+.infor
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+header p
+{
+    text-align: center;
+    position: sticky;
+    top: 0;
+   
+}
+header
+{
+    background-color: aquamarine;
+    width: 100%;
+    margin: 0px;
+    border: 1px solid;
+}
+footer
+{
+    background-color: aquamarine;   
+    text-align: left;
+    width: 100%;
+    border: 1px solid;
+    padding: 10px;
+    height: auto;
+}
+.apindex
+{
+    position: relative;
+    z-index: -1;
+}
+.divcroll
+{
+    width: 100%;
+    height: 200px;
+    overflow-y: auto;
+}
+.bar ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.column
+{
+    float: left;
+    padding: 20px;
+}
+.clearfix::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+.bar li {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+.bar li:hover {
+  background-color: #0099cc;
+}
+.bar
+{
+  width: 25%;
+  text-align: center;
+  position: sticky;
+  top: 0; 
+}
+.content {
+  width: 75%;
+    
 }
 

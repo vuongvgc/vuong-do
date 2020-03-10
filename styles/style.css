@@ -1,92 +1,96 @@
-body
-{
-   
-    background-color:antiquewhite;
+body {
+
+    background-color: antiquewhite;
     border: 1px pink solid;
     margin: 10px auto;
     width: 700px;
     padding: 10px;
-    
+
 }
-#heading
-{
-text-align: center;
+
+#heading {
+    text-align: center;
 }
-.image
-{
+
+.image {
     display: block;
     margin: 0px auto;
     width: 650px;
 }
-#information
-{
-color: deeppink;
-margin: 10px;
+
+#information {
+    color: deeppink;
+    margin: 10px;
 }
+
 a:link {
     color: blue;
 }
+
 a:active {
     color: red;
 }
+
 a:hover {
-    color:green;
+    color: green;
 }
-.image-icon{
+
+.image-icon {
     float: left;
-    width:15px;
+    width: 15px;
 }
-.workimage
-{
+
+.workimage {
     display: block;
     margin: 0px auto;
 
 }
-table, th ,td
-{
-border: 1px solid black;
-border-collapse: collapse;
-padding: 10px;
-width: 700px;
-text-align: center;
-}
-ul
-{
-list-style-type: square;
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    width: 700px;
+    text-align: center;
 }
 
-.list-bookmark
-{
-list-style-type: none;
-margin: 5px;
-padding: 0px;
-overflow: hidden;
-background-color:aquamarine;
-font-size: 25px;
+ul {
+    list-style-type: square;
 }
-.list-bookmark li
-{
-float: left;
+
+.list-bookmark {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: aquamarine;
+    font-size: 25px;
 }
-.list-bookmark li a
-{
-padding: 10px;
-display: block;
-text-align: center;
-text-decoration: none;
+
+.list-bookmark li {
+    float: left;
 }
-.list-bookmark li a:hover
-{
-background-color:aqua;
+
+.list-bookmark li a {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
-span
-{
-color: red;
+
+.list-bookmark li a:hover {
+    background-color: aqua;
 }
-iframe
-{
-height:350px;
-width: 100%;
-padding: 0px;
-border: none;
+
+span {
+    color: red;
+}
+
+iframe {
+    height: 350px;
+    width: 100%;
+    padding: 0px;
+    border: none;
 }

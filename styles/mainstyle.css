@@ -1,46 +1,46 @@
-ol
-{
-list-style-type: none;
-margin: 0px;
-padding: 0px;
-overflow: hidden;
-background-color: deeppink;
+ol {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: deeppink;
 }
-li
-{
-float: left;
+
+li {
+  float: left;
 }
-li a
-{
-font-size: 30px;
-padding: 20px;
-color: white;
-text-decoration: none;
+
+li a {
+  font-size: 30px;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
 }
-iframe
-{
-display:block;
-width: 750px;
-height:750px;
-margin: 0px auto;
-border: none;
+
+iframe {
+  display: block;
+  width: 750px;
+  height: 750px;
+  margin: 0px auto;
+  border: none;
 }
-h1
-{
-text-align: center;
+
+h1 {
+  text-align: center;
 }
-img
-{
-padding: 5px;
-width: 50px;
+
+img {
+  padding: 5px;
+  width: 50px;
 }
-.logo
-{
-margin: 0px;
-padding: 0px;
-overflow: hidden;
+
+.logo {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
 }
-img,h1
-{
-float: left;
+
+img,
+h1 {
+  float: left;
 }

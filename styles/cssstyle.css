@@ -21,8 +21,11 @@
 {
     width: 100%;
     height: auto;
-   
-    
+    opacity: 0.5;
+}
+.imgheader:hover
+{
+    opacity: 1.0;
 }
 .imgicon
 {
@@ -167,12 +170,23 @@ header p
     top: 0;
    
 }
-header
+.hbackground
 {
-    background-color: aquamarine;
+    background-image: url("/images/header.jpg"); 
     width: 100%;
     margin: 0px;
     border: 1px solid;
+}
+.transbox
+{
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+.transbox:hover
+{
+    opacity: 1.0;
 }
 footer
 {
@@ -180,8 +194,8 @@ footer
     text-align: left;
     width: 100%;
     border: 1px solid;
-    padding: 10px;
     height: auto;
+    
 }
 .apindex
 {
@@ -216,6 +230,7 @@ footer
   margin-bottom: 8px;
   background-color: #33b5e5;
   color: #ffffff;
+  
 }
 .bar li:hover {
   background-color: #0099cc;
@@ -223,6 +238,7 @@ footer
 .bar
 {
   width: 25%;
+ 
   text-align: center;
   position: sticky;
   top: 0; 
@@ -231,4 +247,70 @@ footer
   width: 75%;
     
 }
+.bookmark li
+{
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    
+}
+.bookmark
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.bookmark li a
+{
+    color: black;
+}
+.childselector > p
+{
+    color: red;
+}
+#selectorcss + p
+{
+    color: green;
+}
+.general ~ p
+{
+    color: pink;
+}
+.infor:hover .hello
+{
+    display: block;
+}
+.hello
+{
+    display: none;
+    background-color: pink;
+    padding: 10px;
+}
+li:first-child 
+{
+color: greenyellow;
+}
+header p::first-letter
+{
+    color: red;
+    font-size: xx-large;
+}
+div .divcroll p::first-line
+{
+    color: red;
+}
+div h2: ::before
+{
+    content: url(smiley.gif);
 
+}
+::selection
+{
+    background-color: yellow;
+    color: red;
+}
+.bar li.active {
+    background-color: #4CAF50;
+    color: white;
+  }

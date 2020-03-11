@@ -11,15 +11,17 @@
         <script src="https://kit.fontawesome.com/caba06fd75.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <h1>Learn CSS - Cascading Style Sheets</h1>
-            <p>Vuong Do</p>
+        <header class="hbackground">
+            <div class="transbox">
+                <h1 >Learn CSS - Cascading Style Sheets</h1>
+                <p>Vuong Do</p>
+            </div>
         </header>
         <div class="clearfix">
             <div class="bar column">
                 <ul>
                     <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
-                    <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+                    <li class="active" ><a  href="https://www.w3schools.com/css/default.asp">CSS</a></li>
                     <li ><a href="https://www.w3schools.com/js/default.asp">Javacript</a></li>
                 </ul>
             </div>
@@ -28,13 +30,14 @@
                 <img class="imgheader" src="images/css-background.png" alt="css background"/>
                 </div>
                 <div class="divcroll">
-                    <h2>What is CSS?</h2>
+                    <h2 id="whatcss">What is CSS?</h2>
                     <img class="imgicon" src="images/img_css.jpg" alt="css">
                     <p>CSS stands for Cascading Style Sheets</p>
                     <p>CSS describes how HTML elements are to be displayed</p>
                 </div>
-                <div>
-                    <h2>Content of CSS tutorial:</h2>
+                <div class="childselector">
+                    <h2 id="contentcss">Content of CSS tutorial:</h2>
+                    <p>There have a lot of to help you learn CSS</p>
                     <ol type="1">
                         <li>CSS Syntax.</li>
                         <li>CSS Examples.</li>
@@ -42,9 +45,12 @@
                         <li>CSS Quiz Test.</li>
                         <li>CSS Templates.</li>
                     </ol>
+                    <p>Go to webiste to learn more 
+                        <a href="https://www.w3schools.com">
+                            W3Schools</a></p>
                 </div>
                 <div>
-                    <h2>CSS Syntax</h2>
+                    <h2 id="syntaxcss">CSS Syntax</h2>
                     <table>
                         <tr>
                             <th>No.</th>
@@ -87,7 +93,7 @@
                     </table>
                 </div>
                 <div class="divcroll">
-                    <h2>CSS Selectors</h2>
+                    <h2 id="selectorcss">CSS Selectors</h2>
                     <p>CSS selectors are used to "find" (or select)
                         the HTML elements you want to style.</p>
                     <ul>
@@ -108,12 +114,14 @@
                     </ul>
                 </div>
                 <div>
-                    <h2>CSS Comments</h2>
+                    <h2 class="general">CSS Comments</h2>
                     <p>Comments are used to explain the code, and
                         may help when you edit the source code at
                         a later date.</p>
                     <P>Comments are ignored by browsers.</P>
                     <p>A CSS comment starts with /* and ends with */:</p>
+                    <a href=#"">Test code</a>
+                    <h3>Test code</h3>
                 </div>
                 <div>
                     <h2>CSS Colors</h2>
@@ -127,8 +135,8 @@
                         <li>CSS Color Values</li>
                     </ul>
                 </div>
-                <div class="infor">
-                    <p>Contact with 
+                <div class="infor">Contact me
+                    <p class="hello">Hello I'm 
                         <i class="fab fa-facebook-f"></i>
                         <a href="https://www.facebook.com/vuongvgc">
                             Vuong Do</a> </p>
@@ -137,7 +145,14 @@
         </div>
         <div>
             <footer>
-                <p>Copywirte by Vuong Do</p>
+                <div class="bookmark">
+                    <ul>
+                        <li><a href="#whatcss">What is CSS?</a></li>
+                        <li><a href="#contentcss">Content list</a></li>
+                        <li><a href="#syntaxcss">CSS Syntax</a></li>
+                        <li><a href="#selectorcss">CSS Selectors</a></li>
+                    </ul>
+                </div>
             </footer>
         </div>
     </body>
